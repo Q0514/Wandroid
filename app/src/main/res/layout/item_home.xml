@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_marginBottom="1px"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:paddingHorizontal="4dp"
+            android:paddingVertical="2dp"
+            android:text="置顶"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_fresh"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:paddingHorizontal="4dp"
+            android:paddingVertical="2dp"
+            android:text="新"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:paddingHorizontal="4dp"
+            android:paddingVertical="2dp"
+            android:text="本站发布"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:text="作者"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ll_top" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="标题"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/round"
+        app:layout_constraintStart_toStartOf="@+id/ll_top"
+        app:layout_constraintTop_toBottomOf="@+id/ll_top" />
+
+    <TextView
+        android:id="@+id/tv_chapter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="问答/官方"
+        android:textSize="12sp"
+        android:background="@drawable/round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <ImageView
+        android:id="@+id/iv_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_chapter_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_chapter_name"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
